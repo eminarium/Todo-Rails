@@ -1,22 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
-</p>
-
-<div>
-  <%= render @todo_list.todo_items %>
-
-  <div>
-    <%= render 'todo_items/form' %>
-  </div>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4"><%= @todo_list.title %></h1>
+        <p class="lead"><%= @todo_list.description %></p>
+    </div>
 </div>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<ul class="list-group">
+    <%= render @todo_list.todo_items %>
+    <%= render 'todo_items/form' %>
+</ul>
+
+<br />
+
+<%= link_to edit_todo_list_path(@todo_list), class: "btn btn-warning", style: "color:white" do %>
+  <i class="fa fa-edit"></i>
+<% end %>
+
+<%= link_to todo_lists_path, class: "btn btn-info", style: "color:white" do %>
+  <i class="fa fa-undo"></i>
+<% end %>

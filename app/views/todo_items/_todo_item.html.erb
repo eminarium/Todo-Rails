@@ -1,16 +1,25 @@
-<p>
-    <% if todo_item.complete? %>
-        <strike>
-            <span style="opacity: 0.5">
-                <%= todo_item.content %>
-            </span>
-        </strike>
-    <% else %>
-        <%= todo_item.content %>
-    <% end %>
-
-    <%= link_to "Del", todo_list_todo_item_path(@todo_list, todo_item), method: :delete, data: { confirm: "Are you sure?"} %>
-
-    <% toggle_button_title = todo_item.complete? ? "Uncheck" : "Complete" %>
-    <%= link_to toggle_button_title, toggle_todo_list_todo_item_path(@todo_list, todo_item), method: :patch %>
-</p>
+<% if todo_item.complete? %>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    <span style="text-decoration:line-through;"><%= todo_item.content %> </span>
+    <span>
+        <%= link_to todo_list_todo_item_path(@todo_list, todo_item), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger", style: "color:white" do %>
+            <i class="fa fa-trash"></i>
+        <% end %>
+        <%= link_to toggle_todo_list_todo_item_path(@todo_list, todo_item), method: :patch, class: "btn btn-info", style: "color:white" do %>
+            <i class="fa fa-check"></i>
+        <% end %>
+    </span>
+</li>
+<% else %>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    <span><%= todo_item.content %></span>
+    <span>
+        <%= link_to todo_list_todo_item_path(@todo_list, todo_item), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger", style: "color:white" do %>
+            <i class="fa fa-trash"></i>
+        <% end %>
+        <%= link_to toggle_todo_list_todo_item_path(@todo_list, todo_item), method: :patch, class: "btn btn-info", style: "color:white" do %>
+            <i class="fa fa-check"></i>
+        <% end %>
+    </span>
+</li>
+<% end %>
