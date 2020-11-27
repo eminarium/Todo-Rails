@@ -1,2 +1,16 @@
-<p><%= todo_item.content %></p>
-<%= link_to "X", todo_list_todo_item_path(@todo_list, todo_item), method: :delete, data: { confirm: "Are you sure?"} %>
+<p>
+    <% if todo_item.complete? %>
+        <strike>
+            <span style="opacity: 0.5">
+                <%= todo_item.content %>
+            </span>
+        </strike>
+    <% else %>
+        <%= todo_item.content %>
+    <% end %>
+
+    <%= link_to "Del", todo_list_todo_item_path(@todo_list, todo_item), method: :delete, data: { confirm: "Are you sure?"} %>
+
+    <% toggle_button_title = todo_item.complete? ? "Uncheck" : "Complete" %>
+    <%= link_to toggle_button_title, toggle_todo_list_todo_item_path(@todo_list, todo_item), method: :patch %>
+</p>
