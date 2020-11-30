@@ -17,14 +17,15 @@
             <div class="card-body">
                 <h5 class="card-title"><%= todo_list.title %></h5>
                 <p class="card-text"><%= todo_list.description %></p>
+                <p style="font-style:italic"><%= time_ago_in_words(todo_list.created_at) %> ago</p>
                 <%= link_to todo_list, class: "btn btn-primary", style: "color:white" do %>
-                  <i class="fa fa-info"></i>
+                <i class="fa fa-info"></i>
                 <% end %>
                 <%= link_to edit_todo_list_path(todo_list), class: "btn btn-warning", style: "color:white" do %>
-                  <i class="fa fa-edit"></i>
+                <i class="fa fa-edit"></i>
                 <% end %>
                 <%= link_to todo_list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger", style: "color:white" do %>
-                  <i class="fa fa-trash"></i>
+                <i class="fa fa-trash"></i>
                 <% end %>
             </div>
         </div>

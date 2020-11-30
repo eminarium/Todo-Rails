@@ -5,6 +5,7 @@
     <div class="container">
         <h1 class="display-4"><%= @todo_list.title %></h1>
         <p class="lead"><%= @todo_list.description %></p>
+        <p><%= time_ago_in_words(@todo_list.created_at) %> ago</p>
     </div>
 </div>
 
@@ -16,9 +17,9 @@
 <br />
 
 <%= link_to edit_todo_list_path(@todo_list), class: "btn btn-warning", style: "color:white" do %>
-  <i class="fa fa-edit"></i>
+<i class="fa fa-edit"></i>
 <% end %>
 
 <%= link_to todo_lists_path, class: "btn btn-info", style: "color:white" do %>
-  <i class="fa fa-undo"></i>
+<i class="fa fa-undo"></i>
 <% end %>
