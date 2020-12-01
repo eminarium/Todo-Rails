@@ -1,16 +1,16 @@
 <div class="container" style="margin-top: 50px">
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">Edit List</h1>
+            <h1 class="card-title"><%= t('lists.edit_list') %> </h1>
 
             <%= render 'form', todo_list: @todo_list %>
 
             <%= link_to @todo_list, class: "btn btn-info", style: "color:white" do %>
-                <i class="fa fa-info"></i>
+            <i class="fa fa-info"></i>
             <% end %>
 
             <%= link_to todo_lists_path, class: "btn btn-warning", style: "color:white" do %>
-                <i class="fa fa-undo"></i>
+            <i class="fa fa-undo"></i>
             <% end %>
         </div>
     </div>

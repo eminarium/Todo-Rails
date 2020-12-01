@@ -1,0 +1,26 @@
+ru:
+  navbar:
+    profile: "Профиль"
+    logout: "Выйти"
+    register: "Регистрация"
+    login: "Вход"
+  main:
+    todo_lists: "Списки Задач"
+    todo_list_desc: "Просмотрите списки задач или создайте новый список"
+    start_new_list: "Новый Список"
+  lists:
+    new_list: "Новый Список"
+    edit_list: "Редактировать Список"
+    title: "Название..."
+    description: "Описание..."
+  forms:
+    submit: "Принять"
+  registration:
+    profile_details: "Детали Профиля"
+    min_chars: "минимальное кол-во символов"
+    update: "Изменить"
+    cancel: "Удалить Учетную Запись"
+    unhappy: "Недовольны?"
+    cancel_my_account: "Удалить мою запись"
+    back: "Назад"
+

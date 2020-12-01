@@ -1,0 +1,30 @@
+tm:
+  navbar:
+    profile: "Profil"
+    logout: "Ulgamdan çyk"
+    register: "Hasaba al"
+    login: "Ulgama gir"
+  main:
+    todo_lists: "Ýumuşlar Sanawy"
+    todo_list_desc: "Ýumuşlar sanawyny gözden geçiriň ýa-da täze sanaw başladyň"
+    start_new_list: "Täze Sanaw"
+  lists:
+    new_list: "Täze Sanaw"
+    edit_list: "Sanawy Üýtget"
+    title: "Ady..."
+    description: "Giňişleýin..."
+  forms:
+    submit: "Kabul Et"
+  registration:
+    profile_details: "Profil Maglumatlary"
+    min_chars: "azyndan, şonça belgi"
+    update: "Üýtget"
+    cancel: "Hasabymy boz"
+    unhappy: "Närazymy?"
+    cancel_my_account: "Meniň hasabymy boz"
+    back: "Yza"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "takmynan 1 sagat"
+        other: "takmynan %{count} sagat"

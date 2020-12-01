@@ -24,14 +24,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
+                    <li><%= link_to 'EN', root_path(locale: :en), style: "background-color:white; padding-left: 5px" %></li>
+                    <li><%= link_to 'RU', root_path(locale: :ru), style: "background-color:white; padding-left: 5px" %></li>
+                    <li><%= link_to 'TM', root_path(locale: :tm), style: "background-color:white; padding-left: 5px" %></li>
                 </ul>
                 <span class="navbar-text">
                     <% if user_signed_in? %>
-                    <%= link_to "Profile", edit_user_registration_path, style: "background-color:white" %>
-                    <%= link_to "Logout", destroy_user_session_path, method: :delete, style: "background-color:white" %>
+                    <%= link_to t('navbar.profile'), edit_user_registration_path, style: "background-color:white; padding-left: 15px" %>
+                    <%= link_to t('navbar.logout'), destroy_user_session_path, method: :delete, style: "background-color:white; padding-left: 15px" %>
                     <% else %>
-                    <%= link_to "Register", new_user_registration_path, style: "background-color:white" %>
-                    <%= link_to "Login", new_user_session_path, style: "background-color:white" %>
+                    <%= link_to t('navbar.register'), new_user_registration_path, style: "background-color:white; padding-left: 15px" %>
+                    <%= link_to t('navbar.login'), new_user_session_path, style: "background-color:white; padding-left: 15px" %>
                     <% end %>
                 </span>
             </div>

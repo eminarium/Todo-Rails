@@ -30,4 +30,27 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  navbar:
+    profile: "Profile"
+    logout: "Logout"
+    register: "Register"
+    login: "Login"
+  main:
+    todo_lists: "Todo Lists"
+    todo_list_desc: "Look through lists or Start a new List"
+    start_new_list: "Start New List"
+  lists:
+    new_list: "New List"
+    edit_list: "Edit List"
+    title: "Title..."
+    description: "Description..."
+  forms:
+    submit: "Submit"
+  registration:
+    profile_details: "Profile details"
+    min_chars: "minimum amount of characters"
+    update: "Update"
+    cancel: "Cancel"
+    unhappy: "Unhappy?"
+    cancel_my_account: "Cancel my account"
+    back: "Back"    

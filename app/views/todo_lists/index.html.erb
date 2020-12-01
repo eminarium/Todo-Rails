@@ -1,9 +1,9 @@
 <div class="jumbotron">
     <div class="container">
-        <h1 class="display-4">Todo Lists</h1>
-        <p class="lead">Look through lists or Start a new List</p>
+        <h1 class="display-4"><%= t('main.todo_lists') %></h1>
+        <p class="lead"><%= t('main.todo_list_desc') %></p>
         <hr class="my-4">
-        <%= link_to 'Start New List', new_todo_list_path, class: "btn btn-primary btn-xs", style: "color:white" %>
+        <%= link_to t('main.start_new_list'), new_todo_list_path, class: "btn btn-primary btn-xs", style: "color:white" %>
     </div>
 </div>
 
