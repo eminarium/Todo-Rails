@@ -6,6 +6,12 @@ class TodoItemsController < ApplicationController
 
     def create
         @todo_item = @todo_list.todo_items.create(todo_item_params)
+        
+        if @todo_item.valid?
+            flash[:success] = "New Item successfully created..."
+        else
+            flash[:danger] = "Error creating new List item..."
+        end
 
         redirect_to @todo_list
     end
@@ -14,7 +20,7 @@ class TodoItemsController < ApplicationController
         if @todo_item.destroy
             flash[:success] = "Item successfully deleted..."
         else
-            flash[:error] = "Item could not be deleted..."
+            flash[:danger] = "Item could not be deleted..."
         end
 
         redirect_to @todo_list
@@ -22,7 +28,8 @@ class TodoItemsController < ApplicationController
 
     def toggle
         @todo_item.toggle!(:complete)
-        redirect_to @todo_list, notice: (@todo_item.complete? ? "Item completed" : "Item still incomplete")
+        flash[:success] = (@todo_item.complete? ? "Item completed" : "Item still incomplete")
+        redirect_to @todo_list
     end
 
     private
