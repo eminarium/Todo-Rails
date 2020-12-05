@@ -15,7 +15,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%= todo_list.title %></h5>
                 <p class="card-text"><%= todo_list.description %></p>
-                <p style="font-style:italic"><%= time_ago_in_words(todo_list.created_at) %> ago</p>
+                <p style="font-style:italic"><%= time_ago_in_words(todo_list.created_at) %></p>
                 <%= link_to todo_list, class: "btn btn-primary", style: "color:white" do %>
                 <i class="fa fa-info"></i>
                 <% end %>
