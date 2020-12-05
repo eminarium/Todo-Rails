@@ -17,10 +17,11 @@ Bootstrap for decoration.
 List of extra tools used are shown below.  
   
     
+Database: Postgres  
 
 Gems used:  
 - Devise (for authentication)  
 - friendly_id (for slug)  
-- rails-i18n (for translation)  
+- rails-i18n (for translation/ :en, :ru, :tm locales used)  
 
 
