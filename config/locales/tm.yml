@@ -1,13 +1,14 @@
 tm:
   navbar:
+    register: "Hasaba"
+    login: "Ulgama"
     profile: "Profil"
     logout: "Ulgamdan çyk"
-    register: "Hasaba al"
-    login: "Ulgama gir"
   main:
     todo_lists: "Ýumuşlar Sanawy"
     todo_list_desc: "Ýumuşlar sanawyny gözden geçiriň ýa-da täze sanaw başladyň"
     start_new_list: "Täze Sanaw"
+    confirm: "Tassyklaýarsyňyzmy?"
   lists:
     new_list: "Täze Sanaw"
     edit_list: "Sanawy Üýtget"
@@ -15,7 +16,10 @@ tm:
     description: "Giňişleýin..."
   forms:
     submit: "Kabul Et"
+  session:
+    login: "Ulgama gir"
   registration:
+    register: "Hasaba dur"
     profile_details: "Profil Maglumatlary"
     min_chars: "azyndan, şonça belgi"
     update: "Üýtget"
@@ -23,8 +27,54 @@ tm:
     unhappy: "Närazymy?"
     cancel_my_account: "Meniň hasabymy boz"
     back: "Yza"
+    we_need_your_current_password: "üýtgetmeleri kabul etmek üçin häzirki gizlin sözüňiz gerek"    
+    current_password: "Häzirki gizlin sözüňiz"
+    password_confirmation: "Gizlin sözi tassyklaň"
+    leave_blank: "üýtgetmeýän bolsaňyz boş goýuň"
+    password: "Gizlin Söz"
   datetime:
     distance_in_words:
       about_x_hours:
         one: "takmynan 1 sagat"
         other: "takmynan %{count} sagat"
+      about_x_months:
+        one: "takmynan 1 aý"
+        other: "takmynan %{count} aý"
+      about_x_years:
+        one: "takmynan 1 ýyl"
+        other: "takmynan %{count} ýyl"
+      almost_x_years:
+        one: "1 ýyla golaý"
+        other: "%{count} ýyla golaý"
+      half_a_minute: "ýarym minut"
+      less_than_x_seconds:
+        one: "1 sekuntdan az"
+        other: "%{count} sekuntdan az"
+      less_than_x_minutes:
+        one: "1 minutdan az"
+        other: "%{count} minutdan az"
+      over_x_years:
+        one: "1 ýyldan köp"
+        other: "%{count} ýyldan köp"
+      x_seconds:
+        one: "1 sekund"
+        other: "%{count} sekund"
+      x_minutes:
+        one: "1 minut"
+        other: "%{count} minut"
+      x_days:
+        one: "1 gün"
+        other: "%{count} gün"
+      x_months:
+        one: "1 aý"
+        other: "%{count} aý"
+      x_years:
+        one: "1 ýyl"
+        other: "%{count} ýyl"
+    prompts:
+      second: "Sekund"
+      minute: "Minut"
+      hour: "Sagat"
+      day: "Gün"
+      month: "Aý"
+      year: "Ýyl"        

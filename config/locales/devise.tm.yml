@@ -1,0 +1,65 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+tm:
+  devise:
+    confirmations:
+      confirmed: "Email salgyňyz üstünlikli tassyklanyldy."
+      send_instructions: "Birnäçe minudyň dowamynda, email salgyňyzy tassyklamak barada hat alarsyňyz."
+      send_paranoid_instructions: "Email salgyňyz maglumatlar ammarynda hasaba alnan bolsa, birnäçe minudyň dowamynda email salgyňyzy nädip tassyklamalydygyňyz barada hat alarsyňyz."
+    failure:
+      already_authenticated: "Siz eýýäm ugalama girdiňiz."
+      inactive: "Hasabyňyz entäk aktiwirlenmedik."
+      invalid: "Nädogry %{authentication_keys} ýa-da gizlin söz."
+      locked: "Hasabyňyz bloklanan."
+      last_attempt: "Hasabyňyz bloklanmazdan öň soňky synanşygyňyz."
+      not_found_in_database: "Nadogry %{authentication_keys} ýa-da gizlin söz."
+      timeout: "Sessiýa möhletiňiz tamamlandy. Dowam etmek üçin täzeden giriň."
+      unauthenticated: "Dowam etmek üçin ulgama girmeli ýa-da täze hasap açmaly."
+      unconfirmed: "Dowam etmek üçin email salgyňyzy tassyklaň."
+    mailer:
+      confirmation_instructions:
+        subject: "Tassyklama gönükdirmeleri"
+      reset_password_instructions:
+        subject: "Gizlin sözüňizi täzeleme gönükdirmeleri"
+      unlock_instructions:
+        subject: "Blokdan açmak üçin gönükdirmeler"
+      email_changed:
+        subject: "Email salgyňyz üýtgedildi"
+      password_change:
+        subject: "Gizlin sözüňiz üýtgedildi"
+    omniauth_callbacks:
+      failure: "\"%{reason}\" sebäpli  %{kind}'den tassyklap bolmaýar."
+      success: "%{kind} hasaby arkaly dogry ýagdaýda tassyklanyldy."
+    passwords:
+      no_token: "Gizlin sözi täzeleme barada email gelmezden öň bu sahypa girip bilmersiňiz. Eger gizlin sözüni täzeleme email'den ugradylan bolsaňyz dogry URL ulanýandygyňyzy barlaň."
+      send_instructions: "Gysga wagtyň içinde gizlin sözüňizi täzelemek barada email alarsyňyz."
+      send_paranoid_instructions: "Eger email salgyňyz maglumatlar ammarynda hasaba alnan bolsa gysga wagtyň içinde email salgyňyza gizlin sözi täzelemek üçin salgy (link) ugradylar."
+      updated: "Gizlin sözüňiz üstünlikli täzelendi. Indi ulgama girip bilersiňiz."
+      updated_not_active: "Gizlin sözüňiz üstünlikli ýagdaýda täzelendi."
+    registrations:
+      destroyed: "Hoş galyň! Hasabyňyz üstünlikli ýagdaýda bozuldy. Size ýene-de garaşarys."
+      signed_up: "Hoşgeldiňiz! Üstünlikli ýagdaýda agza bolduňyz."
+      signed_up_but_inactive: "Üstünlikli ýagdaýda agza bolduňyz. Emma, entek ulanyjy hasabyňyz tassyklanmandygy üçin girip bilmersiňiz."
+      signed_up_but_locked: "Üstünlikli ýagdaýda agza bolduňyz. Emma ulanyjy hasabyňyz bloklanandygy üçin girip bilmersiňiz."
+      signed_up_but_unconfirmed: "Email salgyňyza tassyklama salgysy (link) ugradyldy. Hasabyňyzy aktiwirlemek üçin iberilen salga (link) basyň."
+      update_needs_confirmation: "Hasabyňyz üstünlikli ýagdaýda üýtgedildi. Emma email salgyňyzy tassyklamak gerek. Email gutyňyzy barlaň we täze email'yňyzy tassyklama salgysyna (link) basyň."
+      updated: "Hasabyňyzy üstünlikli ýagdaýda üýtgedildi."
+    sessions:
+      signed_in: "Üstünlikli giriş."
+      signed_out: "Üstünlikli çykyş."
+      already_signed_out: "Üstünlikli çykyş."
+      login: "Ulgama gir"
+    unlocks:
+      send_instructions: "Birnäçe minudyň dowamynda hasabyňyzy nädip aktiwirläp biljekdigiňiz barada email alarsyňyz."
+      send_paranoid_instructions: "Eger hasabyňyz bar bolsa, birnäçe minudyň dowamynda hasabyňyzy nädip aktiwirläp biljekdigiňiz barada email ugradylar."
+      unlocked: "Hasabyňyzy üstünlikli ýagdaýda aktiwirlendi. Dowam etmek üçin ulgama giriň."
+  errors:
+    messages:
+      already_confirmed: "öňem tassyklanan, ulgama girmegi synap görüň."
+      confirmation_period_expired: "%{period} dowamynda tassyklanmaly. Täze aktiwirleme talap ediň."
+      expired: "tamamlandy, täzesini talap ediň."
+      not_found: "tapylmady"
+      not_locked: "bloklanmady"
+      not_saved:
+        one: "Ýazga geçirmezden %{resource}'den 1 ýalňyşlyk tapyldy:"
+        other: "Ýazga geçirmezden %{resource}'den %{count} ýalňyşlyk tapyldy:"

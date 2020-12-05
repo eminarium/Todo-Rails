@@ -31,14 +31,15 @@
 
 en:
   navbar:
-    profile: "Profile"
-    logout: "Logout"
     register: "Register"
     login: "Login"
+    profile: "Profile"
+    logout: "Logout"
   main:
     todo_lists: "Todo Lists"
     todo_list_desc: "Look through lists or Start a new List"
     start_new_list: "Start New List"
+    confirm: "Are you sure?"
   lists:
     new_list: "New List"
     edit_list: "Edit List"
@@ -46,11 +47,19 @@ en:
     description: "Description..."
   forms:
     submit: "Submit"
+  session:
+    login: "Login"    
   registration:
+    register: "Register"
     profile_details: "Profile details"
     min_chars: "minimum amount of characters"
     update: "Update"
     cancel: "Cancel"
     unhappy: "Unhappy?"
     cancel_my_account: "Cancel my account"
-    back: "Back"    
+    back: "Back"
+    we_need_your_current_password: "we need your current password to confirm your changes"    
+    current_password: "Current Password"
+    password_confirmation: "Password confirmation"
+    leave_blank: "leave blank if you don't want to change it"
+    password: "Password"

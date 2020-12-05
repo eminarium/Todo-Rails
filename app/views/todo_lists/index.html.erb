@@ -22,7 +22,7 @@
                 <%= link_to edit_todo_list_path(todo_list), class: "btn btn-warning", style: "color:white" do %>
                 <i class="fa fa-edit"></i>
                 <% end %>
-                <%= link_to todo_list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger", style: "color:white" do %>
+                <%= link_to todo_list, method: :delete, data: { confirm: t('main.confirm') }, class: "btn btn-danger", style: "color:white" do %>
                 <i class="fa fa-trash"></i>
                 <% end %>
             </div>
