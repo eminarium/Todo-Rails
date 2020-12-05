@@ -3,7 +3,7 @@ To-do list, implemented in Rails only (+ Bootstrap)
 
 Author : Merdan Durdyýew  
 Github : https://github.com/eminarium  
-Medium (Personal blog) : https://medium.com/@merdan.durdiyev  
+Medium (Personal blog) : https://merdan-durdiyev.medium.com/  
 Medium (Publication / Turkmen content) : https://medium.com/kodeser  
 Medium (Publication / English content) : https://medium.com/kode-art 
 Dev.to : https://dev.to/eminarium  
