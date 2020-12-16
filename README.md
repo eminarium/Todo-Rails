@@ -24,5 +24,25 @@ Gems used:
 - Devise (for authentication)  
 - friendly_id (for slug)  
 - rails-i18n (for translation/ :en, :ru, :tm locales used)  
+  
+  
+Screenshot:
 
+All Todo Lists  
+<img src="app/assets/images/todo_1.png" width="800" />  
+  
+  
+Todos in a List  
+<img src="app/assets/images/todo_2.png" width="800" />  
+  
+  
+  
 
+Instructions:
+- Install Rails (You can install Bitnami Rubystack)
+https://bitnami.com/stack/ruby/installer  
+- Run "bundle install" command in the project folder.  
+- Run rails server => "rails s"  
+- Open link "http://localhost:3000" on you computer.  
+
+# Good Luck!
